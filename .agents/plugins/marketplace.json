@@ -1,0 +1,20 @@
+{
+  "name": "catalex",
+  "interface": {
+    "displayName": "CatalEx"
+  },
+  "plugins": [
+    {
+      "name": "catalex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/catalex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

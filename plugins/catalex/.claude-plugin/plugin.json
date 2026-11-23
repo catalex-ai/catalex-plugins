@@ -1,0 +1,10 @@
+{
+  "name": "catalex",
+  "version": "0.1.0",
+  "description": "Connect this Claude Code agent to WhatsApp, Slack or Google Chat with CatalEx, the communication gateway for AI agents. No server, webhook or code.",
+  "author": { "name": "CatalEx", "url": "https://catalex.co" },
+  "homepage": "https://catalex.co",
+  "repository": "https://github.com/catalex-ai/catalex-plugins",
+  "license": "MIT",
+  "keywords": ["whatsapp", "slack", "google-chat", "gateway", "messaging", "chat", "bot", "agent"]
+}
