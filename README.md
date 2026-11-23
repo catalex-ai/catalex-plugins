@@ -26,7 +26,7 @@ codex plugin add catalex@catalex
 npx skills add catalex-ai/catalex-plugins
 ```
 
-Then ask your agent: "Connect this agent to WhatsApp" (or Slack, or Google Chat).
+Then ask your agent: "Connect this agent to WhatsApp" (or Slack, or Google Chat), or "Open the CatalEx app".
 
 **No install:** paste this into Claude Code or Codex in the agent's folder:
 
@@ -38,7 +38,8 @@ Read https://docs.catalex.co/getting-started/agent-setup.md and set up CatalEx o
 
 | Plugin | Skill | What it does |
 |---|---|---|
-| `catalex` | `connect-agent-to-chat` | Checks the fit (Claude Code or Codex on a Mac with Apple silicon), then follows the setup playbook on [docs.catalex.co](https://docs.catalex.co) |
+| `catalex` | `connect-agent-to-chat` | Checks the fit (Claude Code or Codex on a Mac with Apple silicon), then follows the [setup playbook](https://docs.catalex.co/getting-started/agent-setup), the same one the prompt on catalex.co uses: install, sign-in, onboarding this folder, a test reply, the channel and opening the app |
+| | `open-catalex` | Opens the CatalEx app, where you see your agents, chats, approvals and analytics. Installs CatalEx first if it's missing, after asking |
 
 The plugin contains instructions and links only: no product code, nothing secret. It never handles your credentials, and it asks before linking an account or widening an agent's permissions.
 
@@ -51,6 +52,10 @@ The plugin contains instructions and links only: no product code, nothing secret
 ## Requirements
 
 A Mac with Apple silicon, Claude Code or Codex installed and signed in, and a Google account. Microsoft Teams, Telegram, Discord and phone calls are planned, not available yet.
+
+## Checking changes
+
+`scripts/check.sh` checks the Claude Code and Codex file formats, then installs the plugin in a throwaway Claude Code config and a throwaway Codex home and confirms each skill shows up (Codex needs no sign-in for this), and that skills.sh finds them. `scripts/check.sh --links` also checks every link. Run it before every merge.
 
 ## Licence
 

@@ -2,16 +2,28 @@
   "name": "catalex",
   "version": "0.1.0",
   "description": "Connect this Codex agent to WhatsApp, Slack or Google Chat with CatalEx, the communication gateway for AI agents. No server, webhook or code.",
-  "author": { "name": "CatalEx", "url": "https://catalex.co" },
+  "author": {
+    "name": "CatalEx",
+    "url": "https://catalex.co"
+  },
   "homepage": "https://catalex.co",
   "repository": "https://github.com/catalex-ai/catalex-plugins",
   "license": "MIT",
-  "keywords": ["whatsapp", "slack", "google-chat", "gateway", "messaging", "chat", "bot", "agent"],
+  "keywords": [
+    "whatsapp",
+    "slack",
+    "google-chat",
+    "gateway",
+    "messaging",
+    "chat",
+    "bot",
+    "agent"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "CatalEx",
     "shortDescription": "Put your agent on chat apps",
-    "longDescription": "Connect this Codex agent to WhatsApp, Slack or Google Chat with CatalEx, the communication gateway for AI agents. You, your team or your customers message the agent in those apps and get its replies. The agent keeps its folder, instructions and tools. No server, webhook or code. Needs a Mac with Apple silicon. The plugin contains instructions and links only: it follows the setup guide at docs.catalex.co, never handles your credentials, and asks before linking an account or widening the agent's permissions.",
+    "longDescription": "Connect this Codex agent to WhatsApp, Slack or Google Chat with CatalEx, the communication gateway for AI agents. You, your team or your customers message the agent in those apps and get its replies. The agent keeps its folder, instructions and tools. No server, webhook or code. Ask \"Open the CatalEx app\" to install CatalEx if needed and open its app, where you see your agents, chats, approvals and analytics. Needs a Mac with Apple silicon. The plugin contains instructions and links only: it follows the setup guide at docs.catalex.co, never handles your credentials, and asks before linking an account or widening the agent's permissions.",
     "developerName": "CatalEx",
     "category": "Productivity",
     "capabilities": [],
@@ -19,7 +31,7 @@
     "defaultPrompt": [
       "Connect this agent to WhatsApp",
       "Put this agent in our Slack",
-      "Let customers message this agent on WhatsApp"
+      "Open the CatalEx app"
     ],
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png"
