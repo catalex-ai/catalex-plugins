@@ -1,0 +1,17 @@
+{
+  "name": "catalex",
+  "owner": {
+    "name": "CatalEx",
+    "url": "https://catalex.co"
+  },
+  "metadata": {
+    "description": "CatalEx: connect Claude Code and Codex agents to WhatsApp, Slack and Google Chat."
+  },
+  "plugins": [
+    {
+      "name": "catalex",
+      "source": "./plugins/catalex",
+      "description": "Connect this Claude Code agent to WhatsApp, Slack or Google Chat with CatalEx, the communication gateway for AI agents. No server, webhook or code."
+    }
+  ]
+}
